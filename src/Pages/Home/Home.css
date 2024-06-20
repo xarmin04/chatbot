@@ -1,4 +1,3 @@
-
 body {
     font-family: Arial, sans-serif;
     background-color: #333;
@@ -14,19 +13,21 @@ body {
 
 .title {
     position: relative;
-    bottom: 80px;
+    bottom: 60px;
     color: white;
     text-align: center;
-    margin-bottom: 20px; /* Adjust this value as needed */
+    margin-bottom: 20px;
+    /* Adjust this value as needed */
 }
 
 .title-2 {
     color: white;
     position: relative;
-    top: 370px;
-    right:500px;
+    top: 190px;
+    right: 520px;
     text-align: center;
-    margin-bottom: 20px; /* Adjust this value as needed */
+    margin-bottom: 20px;
+    /* Adjust this value as needed */
 }
 
 .main-container {
@@ -35,13 +36,14 @@ body {
     flex-direction: column;
     align-items: center;
     bottom: 200px;
-    gap: 20px; /* Space between the title, card-container, and requirements */
+    gap: 20px;
+    /* Space between the title, card-container, and requirements */
 }
 
 .card-container {
     position: relative;
     display: flex;
-    top: 400px;
+    top: 200px;
     gap: 20px;
     justify-content: center;
     flex-wrap: wrap;
@@ -49,7 +51,7 @@ body {
 
 .input-container {
     position: relative;
-    bottom:380px;
+    bottom: 380px;
     display: flex;
     align-items: center;
     background-color: #444;
@@ -76,6 +78,8 @@ body {
 }
 
 .requirements {
+    position: relative;
+    bottom: 180px;
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -94,7 +98,7 @@ body {
     box-sizing: border-box;
 }
 
-.req p{
+.req p {
     position: relative;
     bottom: 10px;
 }
@@ -132,3 +136,36 @@ body {
     color: #ccc;
 }
 
+.button {
+    position: relative;
+    background-color: #ffffff00;
+    color: #fff;
+    gap: 10px;
+    width: 3.5em;
+    height: 2.9em;
+    border: #373737 0.2em solid;
+    border-radius: 11px;
+    text-align: right;
+    transition: all 0.6s ease;
+}
+
+.button:hover {
+    background-color: #6c6c6c;
+    cursor: pointer;
+}
+
+.button svg {
+    width: 1.6em;
+    margin: -0.2em 0.8em 1em;
+    position: absolute;
+    display: flex;
+    transition: all 0.6s ease;
+}
+
+.button:hover svg {
+    transform: translateX(2px);
+}
+
+.text {
+    margin: 0 1.5em
+}
