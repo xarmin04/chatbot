@@ -1,19 +1,16 @@
-import Home from "./Pages/Home/Home";
-import Content from "./Pages/Content/Content";
 
-// import {Route, Routes, useNavigate} from "react-router-dom";
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './Pages/Home/Home';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      {/* <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/content" element={<Content />} />
-      </Routes> */}
-      <Home />
-      <Content />
-    </div>
+
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        {/* Add more routes as needed */}
+      </Routes>
   );
-}
+};
 
 export default App;

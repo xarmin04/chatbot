@@ -6,7 +6,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 200vh;
+    height: 100vh;
     margin: 0;
     box-sizing: border-box;
 }
@@ -17,7 +17,6 @@ body {
     color: white;
     text-align: center;
     margin-bottom: 20px;
-    /* Adjust this value as needed */
 }
 
 .title-2 {
@@ -27,7 +26,6 @@ body {
     right: 520px;
     text-align: center;
     margin-bottom: 20px;
-    /* Adjust this value as needed */
 }
 
 .main-container {
@@ -37,7 +35,6 @@ body {
     align-items: center;
     bottom: 200px;
     gap: 20px;
-    /* Space between the title, card-container, and requirements */
 }
 
 .card-container {
@@ -59,6 +56,7 @@ body {
     padding: 10px;
     width: 600px;
     max-width: 90%;
+    top: -250px;
 }
 
 .card {
@@ -69,6 +67,7 @@ body {
     height: 100px;
     width: 300px;
     text-align: center;
+    transition: all 0.6s ease;
     box-sizing: border-box;
 }
 
@@ -86,7 +85,7 @@ body {
 }
 
 .req {
-    background-color: #1c1c1c;
+    background-color: #000000;
     position: relative;
     padding: 10px;
     border-radius: 20px;
@@ -106,14 +105,15 @@ body {
 .submit-button {
     background: none;
     outline: none;
-    color: #ccc;
+    color: #ffffff;
     font-size: 20px;
     cursor: pointer;
+    
 }
 
 .icon {
     color: #ccc;
-    font-size: 20px;
+    font-size: 24px;
     margin-right: 10px;
     height: 35px;
     cursor: pointer;
@@ -121,15 +121,7 @@ body {
 }
 
 .input-box {
-    /* position: relative; */
-    background: none;
-    border: none;
-    outline: none;
-    color: white;
-    width: 100%;
-
-    /* flex-grow: 1; */
-    font-size: 16px;
+    display: none;
 }
 
 .input-box::placeholder {
@@ -140,13 +132,34 @@ body {
     position: relative;
     background-color: #ffffff00;
     color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 10px;
-    width: 3.5em;
+    width: auto;
     height: 2.9em;
     border: #373737 0.2em solid;
     border-radius: 11px;
-    text-align: right;
+    text-align: center;
     transition: all 0.6s ease;
+    padding: 0 10px;
+}
+.button1 {
+    position: relative;
+    background-color: #ffffff00;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: auto;
+    height: 2.9em;
+    left: 390px;
+    border: #373737 0.2em solid;
+    border-radius: 11px;
+    text-align: center;
+    transition: all 0.6s ease;
+    padding: 0 10px;
 }
 
 .button:hover {
@@ -154,11 +167,14 @@ body {
     cursor: pointer;
 }
 
+.button1:hover {
+    background-color: #6c6c6c;
+    cursor: pointer;
+}
+
 .button svg {
     width: 1.6em;
-    margin: -0.2em 0.8em 1em;
-    position: absolute;
-    display: flex;
+    margin: 0;
     transition: all 0.6s ease;
 }
 
@@ -167,5 +183,16 @@ body {
 }
 
 .text {
-    margin: 0 1.5em
+    margin: 0;
 }
+
+.file-name {
+    color: #ccc;
+    margin-left: 10px;
+}
+
+.card:hover {
+    background-color: #4e4e4e;
+    cursor: pointer;
+}
+
