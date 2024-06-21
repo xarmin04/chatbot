@@ -64,12 +64,12 @@ const Home = () => {
         </div>
       </div>
       <div className="input-container">
-        <input type="file" onChange={handleFileChange} className="input-box" id="file-input" />
+        <input type="file" accept=".pdf" onChange={handleFileChange} className="input-box" id="file-input" />
         <button className="button" onClick={() => document.getElementById('file-input').click()}>
           <IoIosAttach className="icon" />
-          <span>{selectedFile ? selectedFile.name : "Choose File"}</span>
+          <span>{selectedFile ? selectedFile.name : "Choose PDF File"}</span>
         </button>
-        <button className="button1" onClick={handleFileUpload}>
+        <button className="button" onClick={handleFileUpload}>
           <MdNavigateNext className="icon" />
         </button>
       </div>
@@ -78,6 +78,7 @@ const Home = () => {
 };
 
 export default Home;
+
 
 
 
